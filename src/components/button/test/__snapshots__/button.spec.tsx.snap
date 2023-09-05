@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<mac-button /> should add css class for size large 1`] = `
+<mac-button size="large" text="Click me">
+  <button class="mac-button mac-button--large" type="button">
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should add css class for size medium 1`] = `
+<mac-button size="medium" text="Click me">
+  <button class="mac-button" type="button">
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should add css class for size small 1`] = `
+<mac-button size="small" text="Click me">
+  <button class="mac-button mac-button--small" type="button">
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should add css class for variant destructive 1`] = `
+<mac-button text="Click me" variant="destructive">
+  <button class="mac-button mac-button--destructive" type="button">
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should add css class for variant flat 1`] = `
+<mac-button text="Click me" variant="flat">
+  <button class="mac-button mac-button--flat" type="button">
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should add css class for variant line 1`] = `
+<mac-button text="Click me" variant="line">
+  <button class="mac-button mac-button--line" type="button">
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should add css class for variant primary 1`] = `
+<mac-button text="Click me" variant="primary">
+  <button class="mac-button mac-button--primary" type="button">
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should add css class for variant secondary 1`] = `
+<mac-button text="Click me" variant="secondary">
+  <button class="mac-button" type="button">
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should be a submit button 1`] = `
+<mac-button text="Click me" type="submit">
+  <button class="mac-button" type="submit">
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should be disabled 1`] = `
+<mac-button disabled="" text="Click me">
+  <button class="mac-button" disabled="" type="button">
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should have a title 1`] = `
+<mac-button text="Click me" title="You should click me">
+  <button class="mac-button" title="You should click me" type="button">
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should have an icon 1`] = `
+<mac-button icon="add" text="Click me">
+  <button class="mac-button" type="button">
+    <mac-icon name="add" size="medium"></mac-icon>
+    Click me
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should only have an icon (and an aria-label) 1`] = `
+<mac-button icon="add" icon-only="" text="Click me">
+  <button aria-label="Click me" class="mac-button mac-button--icon-only" type="button">
+    <mac-icon name="add" size="medium"></mac-icon>
+  </button>
+</mac-button>
+`;
+
+exports[`<mac-button /> should render with default properties 1`] = `
+<mac-button text="Click me">
+  <button class="mac-button" type="button">
+    Click me
+  </button>
+</mac-button>
+`;

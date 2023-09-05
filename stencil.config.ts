@@ -9,6 +9,7 @@ export const config: Config = {
     },
     {
       type: 'dist-custom-elements',
+      customElementsExportBehavior: 'auto-define-custom-elements', // 'default' | 'auto-define-custom-elements' | 'bundle' | 'single-export-module'
     },
     {
       type: 'docs-readme',
@@ -19,6 +20,6 @@ export const config: Config = {
     },
   ],
   testing: {
-    browserHeadless: "new",
+    browserHeadless: 'new',
   },
 };

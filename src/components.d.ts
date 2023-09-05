@@ -6,6 +6,15 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface MacButton {
+        "disabled": boolean;
+        "icon"?: any;
+        "iconOnly": boolean;
+        "size": any;
+        "text": string;
+        "type": any;
+        "variant": any;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -21,7 +30,17 @@ export namespace Components {
         "middle": string;
     }
 }
+export interface MacButtonCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLMacButtonElement;
+}
 declare global {
+    interface HTMLMacButtonElement extends Components.MacButton, HTMLStencilElement {
+    }
+    var HTMLMacButtonElement: {
+        prototype: HTMLMacButtonElement;
+        new (): HTMLMacButtonElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -29,10 +48,21 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "mac-button": HTMLMacButtonElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface MacButton {
+        "disabled"?: boolean;
+        "icon"?: any;
+        "iconOnly"?: boolean;
+        "onButtonClick"?: (event: MacButtonCustomEvent<MouseEvent>) => void;
+        "size"?: any;
+        "text": string;
+        "type"?: any;
+        "variant"?: any;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -48,6 +78,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "mac-button": MacButton;
         "my-component": MyComponent;
     }
 }
@@ -55,6 +86,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "mac-button": LocalJSX.MacButton & JSXBase.HTMLAttributes<HTMLMacButtonElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
