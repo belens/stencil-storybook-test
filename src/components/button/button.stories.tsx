@@ -1,5 +1,5 @@
 import { h } from '@stencil/core';
-import { ButtonValues } from './values';
+// import { ButtonValues } from './values';
 // import { IconValues } from '../icon/values';
 
 const names = ['s'];
@@ -20,11 +20,11 @@ export default {
     },
     variant: {
       control: { type: 'inline-radio' },
-      options: Object.values(ButtonValues.Variant),
+      options: [],
     },
     size: {
       control: { type: 'inline-radio' },
-      options: Object.values(ButtonValues.Size),
+      options: [],
     },
     title: {
       control: { type: 'text' },
@@ -37,12 +37,12 @@ export default {
   args: {
     text: 'Button text',
     iconOnly: false,
-    variant: ButtonValues.Variant.SECONDARY,
-    size: ButtonValues.Size.MEDIUM,
+    variant: 'asdf',
+    size: 'asdf',
     disabled: false,
   },
 };
 
-export const Default = args => {
+export const Default = () => {
   return <div>asdf</div>;
 };

@@ -1,10 +1,4 @@
-// import type { ButtonTypes } from '@components/atoms/button/types';
-// import type { IconTypes } from '@components/atoms/icon/types';
-
-// import { ButtonValues } from '@components/atoms/button/values';
 import { Component, Element, Event, EventEmitter, h, Host, Prop, Watch } from '@stencil/core';
-// import { isBlank, isset } from '@utils/assert.utils';
-// import { assertsString } from '@validators/prop.validator';
 
 @Component({
   tag: 'mac-button',

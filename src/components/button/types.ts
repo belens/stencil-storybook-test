@@ -1,18 +1,15 @@
-import type { ButtonValues } from '@components/atoms/button/values';
-import type { IconValues } from '@components/atoms/icon/values';
-
 export namespace ButtonTypes {
-  export type Size = `${ButtonValues.Size}`;
-  export type Type = `${ButtonValues.Type}`;
-  export type Variant = `${ButtonValues.Variant}`;
+  export type Size = `sadf`;
+  export type Type = `sadf`;
+  export type Variant = `sadf`;
 
   export interface Props {
     text: string;
     name: string;
-    type: ButtonValues.Type;
+    type: any;
     disabled: boolean;
-    variant?: ButtonValues.Variant;
-    icon?: IconValues.Name;
-    size?: ButtonValues.Size;
+    variant?: any;
+    icon?: any;
+    size?: any;
   }
 }
